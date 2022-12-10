@@ -1,0 +1,27 @@
+.form__label {
+    max-width: 120px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .form__labelText {
+      display: inline-block;
+      width: 100%;
+      max-width: 120px;
+      font-weight: 700;
+      margin: 10px;
+      padding: 0;
+     
+    }
+
+    .form__field {
+        border: 1px solid black;
+        padding: 11px;
+        margin: 10px;
+        margin-right: 0;
+        width: 60%;
+        max-width: 142px;
+        border-radius: 4px;
+        
+      }

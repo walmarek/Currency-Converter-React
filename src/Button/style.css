@@ -1,0 +1,21 @@
+.button {
+    background-color: #2a3a4c;
+    width: 100%;
+    margin: 0;
+    color: #ffffff;
+    padding: 18px;
+    border-radius: 4px;
+  }
+  
+  .button:hover {
+    background-color: hsl(212, 29%, 43%);
+  }
+  
+  .button:active {
+    background-color: hsl(212, 29%, 63%);
+  }
+  
+  .button__link {
+    text-decoration: none;
+    color: #ffffff;
+  }

@@ -1,0 +1,32 @@
+.form__fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .form__legend {
+    background-color: #2a3a4c;
+    font-size: 22px;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 20px;
+  }
+
+  .form__labelText {
+    display: inline-block;
+    width: 100%;
+    max-width: 120px;
+    font-weight: 700;
+    margin: 10px;
+    padding: 0;
+   
+  }
+  
+  .form__labelText--currency {
+    display:inline;
+    margin: 0;
+    padding: 10px;
+    font-weight: 700;
+  }
