@@ -2,6 +2,23 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Currency converter
+
+This project is simple instant currency converter for **EUR USD GBP PLN** with fixed value. 
+Value of currencies udated every monday for now. 
+Live update to be fixed shortly and more currencies to be added soon. 
+
+
+[*Currency Converter-Link*](https://walmarek.github.io/currencyConverter](https://walmarek.github.io/currency-converter-react/)
+
+As this converter is made by a newby more fetures will be added with time so plese check, add anything you want and share your thoughts about my project.  
+
+<h2 align="center"> Demo </h2>
+
+<p align="center">
+  <img src="">
+</p>
+
 ## Available Scripts
 
 In the project directory, you can run:
