@@ -1,7 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Currency converter
 
 This project is simple instant currency converter for **EUR USD GBP PLN** with fixed value. 
@@ -18,6 +14,10 @@ As this converter is made by a newby more fetures will be added with time so ple
 <p align="center">
   <img src="">
 </p>
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
