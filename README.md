@@ -5,7 +5,7 @@ Value of currencies udated every monday for now.
 Live update to be fixed shortly and more currencies to be added soon. 
 
 
-<h1 align="center"> [**Currency Converter-Link**](https://walmarek.github.io/currency-converter-react/)</h1>
+[**Currency Converter-Link**](https://walmarek.github.io/currency-converter-react/)
 
 As this converter is made by a newby more fetures will be added with time so plese check, add anything you want and share your thoughts about my project.  
 
