@@ -10,7 +10,7 @@ html {
 
 .body {
   font-family: "Lato", sans-serif;
-  background-image: url(../converter.jpg);
+  background-image: url(../public/converter.jpg);
   background-repeat: no-repeat;
   background-position: center; 
   display: flex;
