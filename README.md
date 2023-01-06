@@ -1,6 +1,7 @@
 <h1 align="center"> Currency converter </h1>
 
 [**Currency Converter-Link**](https://walmarek.github.io/currency-converter-react/)
+
 This project is simple instant currency converter for **EUR USD GBP PLN CHF** with fixed value. 
 Value of currencies udated every monday for now. 
 Live update to be fixed shortly and more currencies to be added soon. 
