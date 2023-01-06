@@ -12,7 +12,7 @@ As this converter is made by a newby more fetures will be added with time so ple
 <h2 align="center"> Demo </h2> 
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/walmarek/currency-converter-react/blob/main/currency-converter-react.gif?raw=true">
 </p>
 
 <h2 align="center"> Getting Started with Create React App </h2>
