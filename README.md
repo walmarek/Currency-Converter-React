@@ -7,7 +7,9 @@ Live update to be fixed shortly and more currencies to be added soon.
 
 As this converter is made by a newby more fetures will be added with time so plese check, add anything you want and share your thoughts about my project.  
 
-<h2 align="center"> Demo </h2> [**Currency Converter-Link**](https://walmarek.github.io/currency-converter-react/)
+<h2 align="center"> Demo </h2> 
+
+[**Currency Converter-Link**](https://walmarek.github.io/currency-converter-react/)
 
 <p align="center">
   <img src="">
