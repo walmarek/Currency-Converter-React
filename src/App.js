@@ -1,23 +1,24 @@
 import { useState } from "react";
 import Button from "./Button";
-import Label from "./Label";
+import Field from "./Field";
 import Fieldset from "./Fieldset";
 import Form from "./Form";
 import Section from "./Section";
+import options from "./Options";
 
 function App() {
-  const [fromCurrencyRate, setFromCurrencyRate] = useState("4.685");
-  const [toCurrencyRate, setToCurrencyRate] = useState("1");
+  const [fromCurrencyRate, setFromCurrencyRate] = useState(options[2].value);
+  const [toCurrencyRate, setToCurrencyRate] = useState(options[0].value);
   const [result, setResult] = useState("");
   const [amount, setAmount] = useState("");
 
-  const calculateResult = () => {
-    return (amount * fromCurrencyRate) / toCurrencyRate;
-  };
+  const calculateResult = () => (amount * fromCurrencyRate) / toCurrencyRate;
 
   const onFormSubmit = (event) => {
     event.preventDefault();
-    setResult(calculateResult().toFixed(2));
+
+    const result = calculateResult();
+    setResult(result.toFixed(2));
   };
 
   return (
@@ -27,7 +28,7 @@ function App() {
         body={
           <Fieldset
             input={
-              <Label
+              <Field
                 title="From:"
                 placeholder="Enter amount"
                 amount={amount}
@@ -39,7 +40,7 @@ function App() {
               />
             }
             output={
-              <Label
+              <Field
                 title="To:"
                 placeholder="Result"
                 amount={result}
