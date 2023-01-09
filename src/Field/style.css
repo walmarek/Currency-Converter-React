@@ -1,0 +1,31 @@
+.field__label {
+  max-width: 120px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.field__body {
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+@media (max-width: 767px) {
+  .field__body {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field__input {
+  padding: 16px;
+  border-radius: 4px;
+  }
+
+  .field__select--currency {
+    padding: 10px;
+    margin: 0;
+    margin-left: 5px;
+    border-radius: 4px;
+    border-width: 2px;
+  }
