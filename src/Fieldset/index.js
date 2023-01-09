@@ -1,9 +1,9 @@
 import "./style.css";
 
 const Fieldset = ({ input, output, button }) => (
-  <fieldset className="form__fieldset">
-    <legend className="form__legend">Currency converter</legend>
-    <span className="form__labelText form__labelText--currency">
+  <fieldset className="fieldset">
+    <legend className="fieldset__legend">Currency converter</legend>
+    <span className="fieldset__labelText fieldset__labelText--currency">
       Select currency:
     </span>
     {input}

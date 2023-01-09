@@ -1,10 +1,10 @@
-.form__fieldset {
+.fieldset {
     border: none;
     margin: 10px;
     padding: 20px;
   }
 
-  .form__legend {
+  .fieldset__legend {
     background-color: #2a3a4c;
     font-size: 22px;
     color: #ffffff;
@@ -13,7 +13,7 @@
     margin: 20px;
   }
 
-  .form__labelText {
+  .fieldset__labelText {
     display: block;
     max-width: 120px;
     font-weight: 700;
@@ -22,7 +22,7 @@
    
   }
   
-  .form__labelText--currency {
+  .fieldset__labelText--currency {
     display:inline;
     margin: 0;
     padding: 10px;
