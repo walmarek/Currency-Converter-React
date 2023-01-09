@@ -2,20 +2,3 @@
     margin: 0;
     padding: 0;
   }
-
-.form__button {
-  background-color: #2a3a4c;
-    margin: 10px auto;
-    width: 100%;
-    color: #ffffff;
-    padding: 18px;
-    border-radius: 4px;
-  }
-  
-  .form__button:hover {
-    background-color: hsl(212, 29%, 43%);
-  }
-  
-  .form__button:active {
-    background-color: hsl(212, 29%, 63%);
-  }
