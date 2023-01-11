@@ -6,9 +6,15 @@ import Form from "./Form";
 import Section from "./Section";
 import options from "./Options";
 
+const initialToRate = () => {
+  return options[0].value
+}
+
 function App() {
-  const [fromCurrencyRate, setFromCurrencyRate] = useState(options[2].value);
-  const [toCurrencyRate, setToCurrencyRate] = useState(options[0].value);
+  const [fromCurrencyRate, setFromCurrencyRate] = useState(() => {
+    return options[2].value});
+
+  const [toCurrencyRate, setToCurrencyRate] = useState(() => initialToRate());
   const [result, setResult] = useState("");
   const [amount, setAmount] = useState("");
 
