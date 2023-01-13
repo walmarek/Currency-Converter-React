@@ -14,7 +14,7 @@ const TimeAndDate = () => {
     };
   }, []);
 
-  const getDate = () =>
+  const formatDate = () =>
     date.toLocaleString("en-EN", {
       weekday: "long",
       day: "numeric",
@@ -25,7 +25,7 @@ const TimeAndDate = () => {
       second: "2-digit",
     });
 
-  return <div className="date">{getDate(date)}</div>;
+  return <div className="date">{formatDate(date)}</div>;
 };
 
 export default TimeAndDate;
