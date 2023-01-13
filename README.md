@@ -2,17 +2,16 @@
 
 [**Currency Converter-Link**](https://walmarek.github.io/currency-converter-react/)
 
-This project is simple instant currency converter for **EUR USD GBP PLN CHF** with fixed value. 
-Value of currencies udated every monday for now. 
-Live update to be fixed shortly and more currencies to be added soon. 
+This project is simple instant currency converter for **EUR USD GBP PLN CHF** with fixed value.
+Value of currencies udated every monday for now.
+Live update to be fixed shortly and more currencies to be added soon.
 
+As this converter is made by a newby more fetures will be added with time so plese check, add anything you want and share your thoughts about my project.
 
-As this converter is made by a newby more fetures will be added with time so plese check, add anything you want and share your thoughts about my project.  
-
-<h2 align="center"> Demo </h2> 
+<h2 align="center"> Demo </h2>
 
 <p align="center">
-  <img src="https://github.com/walmarek/currency-converter-react/blob/main/public/currency-converter-react.gif?raw=true">
+  <img src="https://github.com/walmarek/currency-converter-react/blob/main/public/currency-converter-react-new.gif?raw=true">
 </p>
 
 <h3 align="left">Languages and Tools used i this app:</h3>
@@ -79,6 +78,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 <h2> Deployment </h2>
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
 <h2> `npm run build` fails to minify </h2>
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
