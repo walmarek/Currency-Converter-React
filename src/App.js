@@ -5,8 +5,9 @@ import Fieldset from "./Fieldset";
 import Form from "./Form";
 import Section from "./Section";
 import options from "./Options";
+import TimeAndDate from "./TimeAndDate";
 
-const initialToRate = () => {
+const initialToCurrencyRate = () => {
   return options[0].value
 }
 
@@ -14,7 +15,7 @@ function App() {
   const [fromCurrencyRate, setFromCurrencyRate] = useState(() => {
     return options[2].value});
 
-  const [toCurrencyRate, setToCurrencyRate] = useState(() => initialToRate());
+  const [toCurrencyRate, setToCurrencyRate] = useState(() => initialToCurrencyRate());
   const [result, setResult] = useState("");
   const [amount, setAmount] = useState("");
 
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <div className="container">
+      <TimeAndDate />
       <Form
         onFormSubmit={onFormSubmit}
         body={
