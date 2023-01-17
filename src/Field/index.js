@@ -1,6 +1,5 @@
-import "./style.css";
-import options from "../Options"
-
+import { Label, Input, Select, Title } from "./styled";
+import options from "../Options";
 
 const Field = ({
   title,
@@ -9,29 +8,23 @@ const Field = ({
   onChangeAmount,
   currencyRate,
   onChangeCurrencyRate,
-}) => 
-  <label>
-    <div className="field__body">
-      <span className="field__labelText">{title}</span>
-      <input
-        className="field__input"
-        placeholder={placeholder}
-        value={amount}
-        onChange={onChangeAmount}
-      />
-      <select
-        value={currencyRate}
-        onChange={onChangeCurrencyRate}
-        className="field__select--currency"
-      >
-        {options.map((option) => (
-          <option key={option.id} value={option.value}>
-            {option.name}
-          </option>
-        ))}
-      </select>
-    </div>
-  </label>;
-
+}) => (
+  <Label>
+    <Title>{title}</Title>
+    <Input
+      type="number"
+      placeholder={placeholder}
+      value={amount}
+      onChange={onChangeAmount}
+    />
+    <Select value={currencyRate} onChange={onChangeCurrencyRate}>
+      {options.map((option) => (
+        <option key={option.id} value={option.value}>
+          {option.name}
+        </option>
+      ))}
+    </Select>
+  </Label>
+);
 
 export default Field;

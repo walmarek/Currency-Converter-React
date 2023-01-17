@@ -1,10 +1,5 @@
-import "./style.css";
-
-const Form = ({ body, onFormSubmit }) => 
-    <form onSubmit={onFormSubmit} className="form">
-      {body}
-    </form>
-  
-
+const Form = ({ body, onFormSubmit }) => (
+  <form onSubmit={onFormSubmit}>{body}</form>
+);
 
 export default Form;

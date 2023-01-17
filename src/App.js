@@ -1,21 +1,25 @@
 import { useState } from "react";
-import Button from "./Button";
+import ConvertButton from "./ConvertButton";
 import Field from "./Field";
-import Fieldset from "./Fieldset";
+import ConverterRow from "./ConverterRow";
 import Form from "./Form";
 import Section from "./Section";
 import options from "./Options";
 import TimeAndDate from "./TimeAndDate";
+import { Main } from "./styled";
 
 const initialToCurrencyRate = () => {
-  return options[0].value
-}
+  return options[0].value;
+};
 
 function App() {
   const [fromCurrencyRate, setFromCurrencyRate] = useState(() => {
-    return options[2].value});
+    return options[2].value;
+  });
 
-  const [toCurrencyRate, setToCurrencyRate] = useState(() => initialToCurrencyRate());
+  const [toCurrencyRate, setToCurrencyRate] = useState(() =>
+    initialToCurrencyRate()
+  );
   const [result, setResult] = useState("");
   const [amount, setAmount] = useState("");
 
@@ -29,12 +33,12 @@ function App() {
   };
 
   return (
-    <div className="container">
+    <Main>
       <TimeAndDate />
       <Form
         onFormSubmit={onFormSubmit}
         body={
-          <Fieldset
+          <ConverterRow
             input={
               <Field
                 title="From:"
@@ -57,12 +61,12 @@ function App() {
                 onChangeCurrencyRate={(e) => setToCurrencyRate(e.target.value)}
               />
             }
-            button={<Button />}
+            button={<ConvertButton />}
           />
         }
       />
       <Section />
-    </div>
+    </Main>
   );
 }
 
