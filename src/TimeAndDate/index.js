@@ -1,20 +1,7 @@
-import { useEffect, useState } from "react";
-import "./style.css";
+import { useCurrentDate } from "./useCurrentDate";
+import { Div } from "./styled";
 
-const TimeAndDate = () => {
-  const [date, setDate] = useState(new Date());
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setDate(new Date());
-    }, 1000);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, []);
-
-  const formatDate = () =>
+const formatDate = (date) =>
     date.toLocaleString("en-EN", {
       weekday: "long",
       day: "numeric",
@@ -25,7 +12,11 @@ const TimeAndDate = () => {
       second: "2-digit",
     });
 
-  return <div className="date">{formatDate(date)}</div>;
+
+const TimeAndDate = () => {
+  const date = useCurrentDate();
+
+  return <Div>{formatDate(date)}</Div>;
 };
 
 export default TimeAndDate;
