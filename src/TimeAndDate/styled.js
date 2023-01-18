@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Div = styled.div`
+export const Box = styled.div`
   margin: 10px;
   font-size: 18px;
   display: flex;

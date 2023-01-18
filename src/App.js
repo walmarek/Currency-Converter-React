@@ -3,18 +3,18 @@ import ConvertButton from "./ConvertButton";
 import Field from "./Field";
 import ConverterRow from "./ConverterRow";
 import Form from "./Form";
-import Section from "./Section";
-import options from "./Options";
+import Footer from "./Footer";
+import currencies from "./currencies";
 import TimeAndDate from "./TimeAndDate";
 import { Main } from "./styled";
 
 const initialToCurrencyRate = () => {
-  return options[0].value;
+  return currencies[0].value;
 };
 
 function App() {
   const [fromCurrencyRate, setFromCurrencyRate] = useState(() => {
-    return options[2].value;
+    return currencies[2].value;
   });
 
   const [toCurrencyRate, setToCurrencyRate] = useState(() =>
@@ -36,7 +36,7 @@ function App() {
     <Main>
       <TimeAndDate />
       <Form
-        onFormSubmit={onFormSubmit}
+        onSubmit={onFormSubmit}
         body={
           <ConverterRow
             input={
@@ -65,7 +65,7 @@ function App() {
           />
         }
       />
-      <Section />
+      <Footer />
     </Main>
   );
 }

@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-export const Footer = styled.footer`
+export const Container = styled.footer`
   display: flex;
   justify-content: center;
 `;
-export const Div = styled.div`
+
+export const Box = styled.div`
   font-size: 16px;
   text-decoration: none;
   color: black;

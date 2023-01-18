@@ -1,5 +1,5 @@
 import { Label, Input, Select, Title } from "./styled";
-import options from "../Options";
+import currencies from "../currencies";
 
 const Field = ({
   title,
@@ -18,7 +18,7 @@ const Field = ({
       onChange={onChangeAmount}
     />
     <Select value={currencyRate} onChange={onChangeCurrencyRate}>
-      {options.map((option) => (
+      {currencies.map((option) => (
         <option key={option.id} value={option.value}>
           {option.name}
         </option>

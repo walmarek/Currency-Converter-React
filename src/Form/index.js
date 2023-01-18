@@ -1,5 +1,5 @@
-const Form = ({ body, onFormSubmit }) => (
-  <form onSubmit={onFormSubmit}>{body}</form>
+const Form = ({ body, onSubmit }) => (
+  <form onSubmit={onSubmit}>{body}</form>
 );
 
 export default Form;

@@ -1,21 +1,21 @@
-import { Footer, Div } from "./styled";
+import { Container, Box } from "./styled";
 
-const Section = () => {
+const Footer = () => {
   return (
-    <Footer>
-      <Div>
+    <Container>
+      <Box>
         Rates updated on 31/12/2022&emsp;
-        <Div
+        <Box
           as="a"
           href="https://www.nbp.pl/home.aspx?f=/kursy/kursya.html"
           title="Avarage currency exchange rates NBP"
           alt="NBP website link exchange rates"
         >
           Check avarage exchange rates NBP - <strong>link</strong>
-        </Div>
-      </Div>
-    </Footer>
+        </Box>
+      </Box>
+    </Container>
   );
 };
 
-export default Section;
+export default Footer;
