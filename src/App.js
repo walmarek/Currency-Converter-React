@@ -4,26 +4,20 @@ import Field from "./Field";
 import ConverterRow from "./ConverterRow";
 import Form from "./Form";
 import Footer from "./Footer";
-import currencies from "./currencies";
 import TimeAndDate from "./TimeAndDate";
 import { Main } from "./styled";
-
-const initialToCurrencyRate = () => {
-  return currencies[0].value;
-};
+import useCurrencyOptions from "./useCurrencyOptions";
 
 function App() {
-  const [fromCurrencyRate, setFromCurrencyRate] = useState(() => {
-    return currencies[2].value;
-  });
-
-  const [toCurrencyRate, setToCurrencyRate] = useState(() =>
-    initialToCurrencyRate()
-  );
   const [result, setResult] = useState("");
   const [amount, setAmount] = useState("");
+  const [fromCurrencyRate, setFromCurrencyRate] = useState("PLN");
+  const [toCurrencyRate, setToCurrencyRate] = useState("EUR");
+  const currencyOptions = useCurrencyOptions();
 
-  const calculateResult = () => (amount * fromCurrencyRate) / toCurrencyRate;
+  const calculateResult = () =>
+    (amount * currencyOptions[toCurrencyRate]) /
+    currencyOptions[fromCurrencyRate];
 
   const onFormSubmit = (event) => {
     event.preventDefault();
@@ -44,6 +38,7 @@ function App() {
                 title="From:"
                 placeholder="Enter amount"
                 amount={amount}
+                currencyOptions={currencyOptions}
                 currencyRate={fromCurrencyRate}
                 onChangeAmount={(e) => setAmount(e.target.value)}
                 onChangeCurrencyRate={(e) =>
@@ -56,6 +51,7 @@ function App() {
                 title="To:"
                 placeholder="Result"
                 amount={result}
+                currencyOptions={currencyOptions}
                 currencyRate={toCurrencyRate}
                 onChangeAmount={(e) => setResult(e.target.value)}
                 onChangeCurrencyRate={(e) => setToCurrencyRate(e.target.value)}
