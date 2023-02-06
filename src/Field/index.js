@@ -1,5 +1,4 @@
 import { Label, Input, Select, Title } from "./styled";
-import currencies from "../currencies";
 
 const Field = ({
   title,
@@ -8,6 +7,7 @@ const Field = ({
   onChangeAmount,
   currencyRate,
   onChangeCurrencyRate,
+  currencyOptions
 }) => (
   <Label>
     <Title>{title}</Title>
@@ -18,13 +18,13 @@ const Field = ({
       onChange={onChangeAmount}
     />
     <Select value={currencyRate} onChange={onChangeCurrencyRate}>
-      {currencies.map((option) => (
-        <option key={option.id} value={option.value}>
-          {option.name}
+      {Object.keys(currencyOptions).map((option) => (
+        <option key={option} value={option}>
+          {option}
         </option>
       ))}
     </Select>
   </Label>
 );
-
+    
 export default Field;
