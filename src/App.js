@@ -6,14 +6,14 @@ import Form from "./Form";
 import Footer from "./Footer";
 import TimeAndDate from "./TimeAndDate";
 import { Main } from "./styled";
-import useCurrencyOptions from "./useCurrencyOptions";
+import useCurrencyOptions from "./CurrencyOptions/useCurrencyOptions";
 
 function App() {
   const [result, setResult] = useState("");
   const [amount, setAmount] = useState("");
   const [fromCurrencyRate, setFromCurrencyRate] = useState("PLN");
   const [toCurrencyRate, setToCurrencyRate] = useState("EUR");
-  const {currencyOptions} = useCurrencyOptions();
+  const { currencyOptions } = useCurrencyOptions();
 
   const calculateResult = () =>
     (amount * currencyOptions[toCurrencyRate]) /

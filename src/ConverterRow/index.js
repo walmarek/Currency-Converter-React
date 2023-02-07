@@ -1,17 +1,14 @@
-import useCurrencyOptions from "../useCurrencyOptions";
+import useCurrencyOptions from "../CurrencyOptions/useCurrencyOptions";
 import { Fieldset, Legend, Span } from "./styled";
 
 const ConverterRow = ({ input, output, button }) => {
-  const {status} = useCurrencyOptions("loading")
+  const { status } = useCurrencyOptions("loading");
 
   return (
     <Fieldset>
       <Legend>Currency converter</Legend>
-      { status === "loading" ? (
-        <p>
-Loading...
-        </p>
-          
+      {status === "loading" ? (
+        <p>Loading...</p>
       ) : status === "error" ? (
         <p>
           Ups... Something gone wrong! <br />
@@ -27,6 +24,6 @@ Loading...
       )}
     </Fieldset>
   );
-}
+};
 
 export default ConverterRow;
