@@ -26,5 +26,5 @@ const Field = ({
     </Select>
   </Label>
 );
-    
+
 export default Field;
