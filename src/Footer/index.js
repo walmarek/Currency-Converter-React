@@ -1,4 +1,4 @@
-import useCurrencyOptions from "../useCurrencyOptions";
+import useCurrencyOptions from "../CurrencyOptions/useCurrencyOptions";
 import { Container, Box } from "./styled";
 
 const Footer = () => {

@@ -7,7 +7,7 @@ const Field = ({
   onChangeAmount,
   currencyRate,
   onChangeCurrencyRate,
-  currencyOptions
+  currencyOptions,
 }) => (
   <Label>
     <Title>{title}</Title>
