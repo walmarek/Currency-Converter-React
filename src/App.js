@@ -13,7 +13,7 @@ function App() {
   const [amount, setAmount] = useState("");
   const [fromCurrencyRate, setFromCurrencyRate] = useState("PLN");
   const [toCurrencyRate, setToCurrencyRate] = useState("EUR");
-  const currencyOptions = useCurrencyOptions();
+  const {currencyOptions} = useCurrencyOptions();
 
   const calculateResult = () =>
     (amount * currencyOptions[toCurrencyRate]) /
