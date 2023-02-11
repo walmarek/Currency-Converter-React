@@ -4,36 +4,35 @@ const BASE_URL =
   "https://api.exchangerate.host/latest?base=PLN&symbols=PLN,EUR,USD,GBP,CHF,CZK,HRK,JPY,RSD,AUD";
 
 const useCurrencyOptions = () => {
-  const [currencyOptions, setCurrencyOptions] = useState("");
-  const [date, setDate] = useState();
-  const [status, setStatus] = useState("loading");
+  const [currencyData, setCurrencyData] = useState({
+    state: "loading",
+  });
 
   useEffect(() => {
     setTimeout(() => {
       fetch(BASE_URL)
         .then((response) => {
           if (!response.ok) {
-            throw new Error(response.status);
+            throw new Error(response.statusText);
           }
           return response.json();
         })
         .then((data) => {
-          setCurrencyOptions(data.rates);
-          setStatus("succes");
-          setDate(data.date);
+          setCurrencyData({
+            rates: data.rates,
+            date: data.date,
+            state: "success",
+          });
         })
-        .catch((error) => {
-          console.error(`Could not get file: ${error}`);
-          setStatus("error");
+        .catch(() => {
+          setCurrencyData({
+            state: "error",
+          });
         });
     }, 1200);
   }, []);
 
-  return {
-    currencyOptions,
-    status,
-    date,
-  };
+  return currencyData;
 };
 
 export default useCurrencyOptions;
