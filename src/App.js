@@ -12,11 +12,11 @@ function App() {
   const [amount, setAmount] = useState("");
   const [fromCurrencyRate, setFromCurrencyRate] = useState("PLN");
   const [toCurrencyRate, setToCurrencyRate] = useState("EUR");
-  const currencyOptions = useCurrencyOptions();
+  const currencyData = useCurrencyOptions();
 
   const calculateResult = () =>
-    (amount * currencyOptions.rates[toCurrencyRate]) /
-    currencyOptions.rates[fromCurrencyRate];
+    (amount * currencyData.rates[toCurrencyRate]) /
+    currencyData.rates[fromCurrencyRate];
 
   const onFormSubmit = (event) => {
     event.preventDefault();
@@ -35,7 +35,7 @@ function App() {
             title="From:"
             placeholder="Enter amount"
             amount={amount}
-            currencyOptions={currencyOptions}
+            currencyData={currencyData}
             currencyRate={fromCurrencyRate}
             onChangeAmount={(e) => setAmount(e.target.value)}
             onChangeCurrencyRate={(e) => setFromCurrencyRate(e.target.value)}
@@ -46,7 +46,7 @@ function App() {
             title="To:"
             placeholder="Result"
             amount={result}
-            currencyOptions={currencyOptions}
+            currencyData={currencyData}
             currencyRate={toCurrencyRate}
             onChangeAmount={(e) => setResult(e.target.value)}
             onChangeCurrencyRate={(e) => setToCurrencyRate(e.target.value)}
