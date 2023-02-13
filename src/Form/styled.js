@@ -24,3 +24,9 @@ export const Span = styled.span`
   padding: 10px;
   font-weight: 700;
 `;
+
+export const Box = styled.div`
+margin: 30px;
+max-width: 420px;
+height: 210px;
+`

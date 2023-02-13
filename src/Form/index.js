@@ -1,5 +1,5 @@
 import useCurrencyOptions from "../CurrencyOptions/useCurrencyOptions";
-import { Fieldset, Legend, Span } from "./styled";
+import { Fieldset, Legend, Span, Box } from "./styled";
 
 const Form = ({ input, output, button, onSubmit }) => {
   const currencyData = useCurrencyOptions();
@@ -9,12 +9,12 @@ const Form = ({ input, output, button, onSubmit }) => {
       <Fieldset>
         <Legend>Currency converter</Legend>
         {currencyData.state === "loading" ? (
-          <p>Loading...</p>
+          <Box>Loading...</Box>
         ) : currencyData.state === "error" ? (
-          <p>
+          <Box>
             Ups... Something gone wrong! <br />
             Please check your internet conection and reload!
-          </p>
+          </Box>
         ) : (
           <>
             <Span>Select currency:</Span>
