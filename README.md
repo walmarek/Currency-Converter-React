@@ -8,6 +8,14 @@ Value of currencies udated from European Central Bank API - [**exchangerate.host
 # 💻 Tech Stack:
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black)
 
+<h3 align="left">and moore:</h3>
+<p align="left">
+- BEM
+- Styled Components
+- Hooks 
+- API (fetch/async-await/axios)
+</p>
+
 More fetures will be added within time so plese visit and check and share your thoughts about my project.
 
 <h2 align="center"> Demo </h2>
@@ -15,9 +23,6 @@ More fetures will be added within time so plese visit and check and share your t
 <p align="center">
   <img src="https://github.com/walmarek/currency-converter-react/blob/main/public/currency-converter-react-newer.gif?raw=true">
 </p>
-
-<h3 align="left">Languages and Tools used i this app:</h3>
-<p align="left"></p>
 
 <h2> Getting Started with Create React App </h2>
 
