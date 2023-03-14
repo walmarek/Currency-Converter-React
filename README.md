@@ -2,7 +2,7 @@
 
 [**Currency Converter-Link**](https://walmarek.github.io/Currency-Converter-React/)
 
-This project is simple instant currency converter for **AUD CHF CZK EUR GBP HRK JPY PLN RSD USD**.
+This project is instant currency converter for **AUD CHF CZK EUR GBP HRK JPY PLN RSD USD**.
 Value of currencies udated from European Central Bank API - [**exchangerate.host-Link**](https://exchangerate.host/) 
 
 # 💻 Tech Stack:
